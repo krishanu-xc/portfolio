@@ -369,7 +369,7 @@
   display: flex;
   padding: 15px 10px 15px;
   background-color: #ffffff;
-  width: 600px;
+  width: 500px;
   margin: 0px 20px 10px;
   border-radius: 15px;
   border: 2px solid #000000;
@@ -387,7 +387,7 @@
 
 .skills-container .skills:active{
   opacity: 1;
-  transform: scale(1.1);
+  transform: scale(1.11);
 }
 
 
