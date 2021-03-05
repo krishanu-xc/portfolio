@@ -168,19 +168,29 @@
             <h2 class="title">Contact Me</h2>
             <div class="content-contact">
                 <div class="sm instagram">
-                    <a href="https://www.instagram.com/krishanuuuu" target="_blank"><img class="sm-logo" src="https://img.icons8.com/ios/60/000000/instagram-new--v1.png"/></a>
+                    <a href="https://www.instagram.com/krishanuuuu" target="_blank">
+                        <img class="sm-logo" src="https://img.icons8.com/ios/60/000000/instagram-new--v1.png"/><span>Instagram</span>
+                    </a>
                 </div>
                 <div class="sm twitter">
-                    <a href="https://twitter.com/krishanu_xc" target="_blank"><img class="sm-logo" src="https://img.icons8.com/ios/60/000000/twitter--v1.png"/></a>
+                    <a href="https://twitter.com/krishanu_xc" target="_blank">
+                        <img class="sm-logo" src="https://img.icons8.com/ios/60/000000/twitter--v1.png"/><span>Twitter</span>
+                    </a>
                 </div>
                 <div class="sm github">
-                    <a href="https://github.com/krishanu-xc" target="_blank"><img class="sm-logo" src="https://img.icons8.com/ios/60/000000/github.png"/></a>
+                    <a href="https://github.com/krishanu-xc" target="_blank">
+                        <img class="sm-logo" src="https://img.icons8.com/ios/60/000000/github.png"/><span>GitHub</span>
+                    </a>
                 </div>
                 <div class="sm linkedin">
-                    <a href="https://linkedin.com/in/krishanu-xc-shah" target="_blank"><img class="sm-logo" src="https://img.icons8.com/ios/60/000000/linkedin.png"/></a>
+                    <a href="https://linkedin.com/in/krishanu-xc-shah" target="_blank">
+                        <img class="sm-logo" src="https://img.icons8.com/ios/60/000000/linkedin.png"/><span>Linkedin</span>
+                    </a>
                 </div>
                 <div class="sm email">
-                    <a href="mailto:shahkrishanu2902@gmail.com" target="_blank"><img src="https://img.icons8.com/ios/60/000000/gmail--v1.png" class="sm-logo"></a>
+                    <a href="mailto:shahkrishanu2902@gmail.com" title="mail" target="_blank">
+                        <img src="https://img.icons8.com/ios/60/000000/gmail--v1.png" class="sm-logo"><span>Mail</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -208,7 +218,7 @@
                 trigger: "#project-box-1",
                 start: "top center",
                 end: "center center",
-                scrub: true,
+
             }
         })
         .from("#project-box-1", {x: innerWidth * 1})
@@ -218,8 +228,8 @@
             scrollTrigger:{
                 trigger: "#project-box-2",
                 start: "top center",
-                end: "center center",
-                scrub: true,
+                end: "bottom center",
+
             }
         })
         .from("#project-box-2", {x: innerWidth * -1})
@@ -230,12 +240,25 @@
                 trigger: "#project-box-3",
                 start: "top center",
                 end: "center center",
-                scrub: true,
             }
         })
         .from("#project-box-3", {x: innerWidth * 1})
     </script>
-    
+
+    </script>
+    <script type="text/javascript">
+        gsap.timeline({
+            scrollTrigger:{
+                trigger: "#skills-container",
+                start: "top bottom",
+                end: "bottom bottom",
+                scrub: true,
+                markers: true,
+
+            }
+        })
+        .from(".progress", {width : 0})
+    </script>
 
 
 </body>

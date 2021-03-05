@@ -8,6 +8,9 @@
 :root{
   --highlights: #0d8f8f
 }
+body{
+  background-color: #000000;
+}
 
 /*navbar style*/
 
@@ -221,6 +224,7 @@
     flex: 100%;
     order: 5;
   }
+
 }
 /*home section*/
 
@@ -308,6 +312,7 @@
 .title {
   font-family: "Poiret One", cursive;
 }
+
 
 .column {
   font-family: "Ubuntu", sans-serif;
@@ -430,11 +435,7 @@
 }
 
 
-@keyframes progbar{
-  from{
-    width: 0;
-  }
-}
+
 
 .skills .name , .skills .percent , .skills .progress{
   z-index: 2;
@@ -514,6 +515,11 @@
   width: 100%;
   object-fit: cover;
   padding: 40px;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+.projectpic:hover{
+  transform: scale(1.05);
 }
 
 .projects {
@@ -662,6 +668,46 @@
   padding: 10px;
   height: 60px;
   width: 60px;
+  transition: 0.4s;
+}
+.sm-logo:hover{
+  transform: scale(1.2);
+}
+
+.sm a span{
+  display: block;
+  position: relative;
+  top: -10px;
+  bottom: 0;
+  width: 100%;
+  scale: 0;
+  text-align: center;
+  transition: 0.4s;
+  background-color: #ffffff;
+  color: #ffffff;
+  font-family: "Poiret One", cursive;
+}
+
+.sm a span:after{
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  margin-top: 5px;
+  margin-left: 50%;
+  background-color: var(--highlights);
+  transition: width 0.3s;
+  transform: translateX(-50%);
+}
+
+.sm a:hover span{
+  display: block;
+  background-color: #ffffff;
+  color: var(--highlights);
+}
+
+.sm a:hover span:after{
+  width: 50%;
 }
 
 /*footer section*/
@@ -826,3 +872,4 @@
   transform: rotate(-48deg);
   -webkit-transform: rotate(-48deg);
 }
+
