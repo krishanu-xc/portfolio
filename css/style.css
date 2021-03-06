@@ -44,6 +44,7 @@ body{
   font-family: "Big Shoulders Stencil Text", cursive;
   transition: 0.4s;
 }
+
 .navbar.sticky .logo {
   color: #ffffff;
 }
@@ -95,6 +96,7 @@ body{
 
 .menu li a:hover {
   color: var(--highlights);
+  transform: scale(1.05);
 }
 .menu li a:hover::after{
   width: 50%;
@@ -148,25 +150,28 @@ body{
   }
   .menu {
     position: fixed;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     right: -100%;
     top: 0;
     background: #000000;
     text-align: center;
     padding-top: 75px;
-    transition: 0.5s;
+    transition: 1.0s;
   }
   .menu.active {
     right: 0;
   }
   .menu li {
-    display: block;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
   .menu li a {
     display: inline-block;
-    margin: 40px 0;
+    margin: 4vh 0;
     font-size: 25px;
+
   }
   .menu li a::after{
     background-color: var(--highlights);
@@ -527,6 +532,7 @@ body{
   padding: 50px 0;
   background: #000000;
   overflow: hidden;
+
 }
 .projects .title {
   position: relative;
